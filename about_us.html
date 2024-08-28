@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+        @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+
+        /* Basic Reset */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Source Sans Pro', sans-serif;
+            background-color: #f6f1ea; /* Primary color for the body background */
+            color: #333; /* Default text color */
+        }
+
+        /* Override UGG site */
+        #main {width: 100%; padding: 0;}
+        .content-asset p {margin: 0 auto;}
+        .breadcrumb {display: none;}
+
+        /* Helpers */
+        /**************************/
+        .margin-top-10 {padding-top: 10px;}
+        .margin-bot-10 {padding-bottom: 10px;}
+
+        /* Typography */
+        /**************************/
+        #parallax-world-of-ugg h1 {
+            font-family: 'Oswald', sans-serif; 
+            font-size: 24px; 
+            font-weight: 400; 
+            text-transform: uppercase; 
+            color: #333; /* Adjusted for better readability */
+            padding: 0; 
+            margin: 0;
+        }
+        #parallax-world-of-ugg h2 {
+            font-family: 'Oswald', sans-serif; 
+            font-size: 70px; 
+            letter-spacing: 10px; 
+            text-align: center; 
+            color: #333; /* Changed to match the new color scheme */
+            font-weight: 400; 
+            text-transform: uppercase; 
+            z-index: 10; 
+            opacity: .9;
+        }
+        #parallax-world-of-ugg h3 {
+            font-family: 'Oswald', sans-serif; 
+            font-size: 14px; 
+            line-height: 0; 
+            font-weight: 400; 
+            letter-spacing: 8px; 
+            text-transform: uppercase; 
+            color: #333; /* Adjusted color */
+        }
+        #parallax-world-of-ugg p {
+            font-family: 'Source Sans Pro', sans-serif; 
+            font-weight: 400; 
+            font-size: 14px; 
+            line-height: 24px; 
+            color: #333; /* Text color adjusted */
+        }
+        .first-character {
+            font-weight: 400; 
+            float: left; 
+            font-size: 84px; 
+            line-height: 64px; 
+            padding-top: 4px; 
+            padding-right: 8px; 
+            padding-left: 3px; 
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        .sc {color: #3b8595;}
+        .ny {color: #3d3c3a;}
+        .atw {color: #c48660;}
+
+        /* Section - Title */
+        /**************************/
+        #parallax-world-of-ugg .title {
+            background: #f9f3e8; /* Slightly darker shade for contrast */
+            padding: 60px; 
+            margin: 0 auto; 
+            text-align: center;
+        }
+        #parallax-world-of-ugg .title h1 {
+            font-size: 35px; 
+            letter-spacing: 8px;
+            color: #333; /* Adjusted for better readability */
+        }
+
+        /* Section - Block */
+        /**************************/
+        #parallax-world-of-ugg .block {
+            background: #ffffff; /* White background for blocks */
+            padding: 60px; 
+            width: 820px; 
+            margin: 0 auto; 
+            text-align: justify;
+            color: #333; /* Text color for block sections */
+        }
+        #parallax-world-of-ugg .block-gray {
+            background: #e8e4d6; /* Light beige to blend with primary color */
+            padding: 60px;
+        }
+        #parallax-world-of-ugg .section-overlay-mask {
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            background-color: black; 
+            opacity: 0.70;
+        }
+
+        /* Section - Parallax */
+        /**************************/
+        #parallax-world-of-ugg .parallax-one {
+            padding-top: 200px; 
+            padding-bottom: 200px; 
+            overflow: hidden; 
+            position: relative; 
+            width: 100%; 
+            background-image: url(https://images.unsplash.com/photo-1415018255745-0ec3f7aee47b?dpr=1&auto=format&fit=crop&w=1500&h=938&q=80&cs=tinysrgb&crop=); 
+            background-attachment: fixed; 
+            background-size: cover; 
+            -moz-background-size: cover; 
+            -webkit-background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position: top center;
+        }
+        #parallax-world-of-ugg .parallax-two {
+            padding-top: 200px; 
+            padding-bottom: 200px; 
+            overflow: hidden; 
+            position: relative; 
+            width: 100%; 
+            background-image: url(https://images.unsplash.com/photo-1432163230927-a32e4fd5a326?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=); 
+            background-attachment: fixed; 
+            background-size: cover; 
+            -moz-background-size: cover; 
+            -webkit-background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position: center center;
+        }
+        #parallax-world-of-ugg .parallax-three {
+            padding-top: 200px; 
+            padding-bottom: 200px; 
+            overflow: hidden; 
+            position: relative; 
+            width: 100%; 
+            background-image: url(https://images.unsplash.com/photo-1440688807730-73e4e2169fb8?dpr=1&auto=format&fit=crop&w=1500&h=1001&q=80&cs=tinysrgb&crop=); 
+            background-attachment: fixed; 
+            background-size: cover; 
+            -moz-background-size: cover; 
+            -webkit-background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position: center center;
+        }
+
+        /* Extras */
+        /**************************/
+        #parallax-world-of-ugg .line-break {
+            border-bottom: 1px solid #333; /* Updated line color */
+            width: 150px; 
+            margin: 0 auto;
+        }
+
+        /* Media Queries */
+        /**************************/
+        @media screen and (max-width: 959px) and (min-width: 768px) {
+            #parallax-world-of-ugg .block {
+                padding: 40px; 
+                width: 620px;
+            }
+        }
+        @media screen and (max-width: 767px) {
+            #parallax-world-of-ugg .block {
+                padding: 30px; 
+                width: 420px;
+            }
+            #parallax-world-of-ugg h2 {
+                font-size: 30px;
+            }
+            #parallax-world-of-ugg .parallax-one, 
+            #parallax-world-of-ugg .parallax-two, 
+            #parallax-world-of-ugg .parallax-three {
+                padding-top: 100px; 
+                padding-bottom: 100px;
+            }
+        }
+        @media screen and (max-width: 479px) {
+            #parallax-world-of-ugg .block {
+                padding: 30px 15px; 
+                width: 290px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="parallax-world-of-ugg">
+  
+        <section>
+          <div class="title">
+            <h3>Come with us on a journey to undertand</h3>
+            <h1>ROTARACT</h1>
+          </div>
+        </section>
+        
+        <section>
+            <div class="parallax-one">
+              <h2>What is ROTARACT</h2>
+            </div>
+        </section>
+        
+        <section>
+          <div class="block">
+            <p><span class="first-character sc">I</span>Rotaract is a service club for young people ages 18–30 that's sponsored by Rotary International. Rotaract clubs are usually based at universities or in communities, and are part of a global effort to promote international understanding and peace. The clubs' goals are to help young adults develop their skills and knowledge, and to address the social and physical needs of their communities. Rotaract clubs are non-discriminatory and non-political, and anyone can join, regardless of gender, creed, or caste.</p>
+            <p class="line-break margin-top-10"></p>
+            <p class="margin-top-10">Rotaract clubs focus on community service, professional development, and leadership development. Club members exchange ideas with community leaders, and have fun through service.</p>
+          </div>
+        </section>
+        
+        <section>
+          <div class="parallax-two">
+            <h2>history about RC Thane Greenspans</h2>
+          </div>
+        </section>
+        
+        <section>
+          <div class="block">
+            <p><span class="first-character ny">B</span>reaking into the New York fashion world is no easy task. But by the early 2000's, UGG Australia began to take it by storm. The evolution of UGG from a brand that made sheepskin boots, slippers, clogs and sandals for an active, outdoor lifestyle to a brand that was now being touted as a symbol of a stylish, casual and luxurious lifestyle was swift. Much of this was due to a brand repositioning effort that transformed UGG into a high-end luxury footwear maker. As a fashion brand, UGG advertisements now graced the pages of Vogue Magazine as well as other fashion books. In the mid 2000's, the desire for premium casual fashion was popping up all over the world and UGG was now perfectly aligned with this movement.</p>
+            <p class="line-break margin-top-10"></p>
+            <p class="margin-top-10">Fueled by celebrities from coast to coast wearing UGG boots and slippers on their downtime, an entirely new era of fashion was carved out. As a result, the desire and love for UGG increased as people wanted to go deeper into this relaxed UGG experience. UGG began offering numerous color and style variations on their sheepskin boots and slippers. Cold weather boots for women and men and leather casuals were added with great success. What started as a niche item, UGG sheepskin boots were now a must-have staple in everyone's wardrobe. More UGG collections followed, showcasing everything from knit boots to sneakers to wedges, all the while maintaining that luxurious feel UGG is known for all over the world. UGG products were now seen on runways and in fashion shoots from coast to coast. Before long, the love spread even further.</p>
+          </div>
+        </section>
+        
+        <section>
+          <div class="parallax-three">
+            <h2>What are Our Core Values</h2>
+          </div>
+        </section>
+        
+        <section>
+          <div class="block">
+            <p><span class="first-character atw">W</span>INTEGRITY: We at Rotaract believe in being honest, transparent and ethical in all our dealings. We create an environment of trust among each other and take accountability for our actions. <br>
+
+                COMMITMENT: We are driven by our passion towards fulfilling our duties and responsibilities. We believe in staying focused on achieving our organizational goals. We embrace the culture of adaptability and perseverance in all our actions. <br>
+                
+                OPPORTUNITY: We believe in empowering our members by providing opportunities for self-development through continuous learning. We nurture our members to expand their capabilities and excel as leaders. <br>
+                
+                IMPACT: Through our actions, we believe in creating a positive and sustainable impact on our members, organization and the community. <br>
+                
+                INCLUSION: We, in Rotaract celebrate a culture of diversity, wherein we welcome. accept and appreciate every individual. We encourage the spirit of participation in our members by providing an unbiased and secure environment. We operate on the principles of openness and empathy by respecting every perspective.</p>
+            <p class="line-break margin-top-10"></p>
+            <p class="margin-top-10">In 2011, UGG will go back to its roots and focus on bringing the active men that brought the brand to life back with new styles allowing them to love the brand again as well. Partnering with Super Bowl champion and NFL MVP Tom Brady, UGG will invite even more men to feel the love the rest of the world knows so well. UGG will also step into the world of high fashion with UGG Collection. The UGG Collection fuses the timeless craft of Italian shoemaking with the reliable magic of sheepskin, bringing the luxurious feel of UGG to high end fashion. As the love for UGG continues to spread across the world, we have continued to offer new and unexpected ways to experience the brand. The UGG journey continues on and the love for UGG continues to spread.</p>
+          </div>
+        </section>
+          
+        </div>
+</body>
+</html>
